@@ -5,6 +5,7 @@ services:
     build:
       context: node
     container_name: app
+    # entrypoint: wait-for db:3306 -t 250 -- ./start.sh
     restart: always
     networks: 
       - node-network
